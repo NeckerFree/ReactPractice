@@ -15,11 +15,12 @@ const CallApi = () => {
   }
 
   const handleRemaind = (id) => {
-    const newData = [...userData];
-    const index = newData.findIndex((user) => user.id === id);
-    const val= (newData[index].hasOwnProperty('remaind')===true)? !(newData[index].remaind): true;
-    newData[index].remaind = val;
-    setUserData(newData);
+    setUserData(userData.map(user => user.id === id
+      ? {
+        ...user, remaind:
+          (user.hasOwnProperty('remaind') === true) ? !user.remaind : true
+      }
+      : user));
   }
   return (
     <div className="exercise">
