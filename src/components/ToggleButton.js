@@ -8,6 +8,7 @@ const ToggleButton = () => {
   return (
     <div className="exercise">
         <h4>Exercise 2</h4>
+       <p className="description">Toggle button text</p> 
       <button onClick={handleClick}>
         {isToggleOn ? 'ON' : 'OFF'}
       </button>

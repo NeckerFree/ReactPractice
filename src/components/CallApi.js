@@ -25,6 +25,7 @@ const CallApi = () => {
   return (
     <div className="exercise">
       <h4>Exercise 1</h4>
+      <p className="description">Call API https://jsonplaceholder.typicode.com/users and show data, toggle highlight record with double click, delete record on client with click</p>
       <div className="table-responsive">
         <table className="table table-primary">
           <thead>

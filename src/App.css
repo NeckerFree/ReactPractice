@@ -2,13 +2,14 @@
   border: solid 1px greenyellow;
   margin: 5px 0px 2px 5px;
   background-color: rgb(222, 220, 220);
+  text-align: center;
 }
 
 .contenedor {
   margin-left: auto;
   margin-right: auto;
   align-content: center;
-  width: 500px;
+  width: 700px;
 }
 .symbol{
   color: green;
@@ -16,5 +17,19 @@
 }
 .selected{
   background-color: rgb(238, 128, 128);
-  border: 1px solid red;
+  
+}
+
+.description{
+  border: 1px solid green;
+  margin: 0px 3px 8px 3px;
+text-align: left;
+}
+
+.cell-number{
+  text-align: right;
+}
+
+.cell-text{
+  text-align: left;
 }
