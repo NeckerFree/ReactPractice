@@ -1,5 +1,6 @@
 import './App.css';
 import CallApi from './components/CallApi';
+import Pagination from './components/Pagination';
 import ToggleButton from './components/ToggleButton';
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <div className="contenedor">
       <CallApi />
       <ToggleButton />
+      <Pagination />
     </div>
 
   )
