@@ -1,5 +1,6 @@
 
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 
 const Pagination = () => {
     const recordsPerPage = 10;
@@ -26,6 +27,7 @@ const Pagination = () => {
         <div className="exercise">
             <h4>Exercise 3</h4>
             <p className="description">Call API https://jsonplaceholder.typicode.com/posts to show paginated data (10 records per page), include buttons to go to previous and next page</p>
+            <Link to="/">back</Link>
             <div className="table-responsive">
                 <div className="page-buttons">
                     <button disabled={currentPage <= 1 ? true : false} onClick={() => changePage(currentPage - 1)}>Previous page</button>
