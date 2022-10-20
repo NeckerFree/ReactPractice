@@ -17,7 +17,6 @@ const IndexPage = () => {
             <Link to={`/dogs/${breed}/`}>{breed}</Link>
           </li>
         ))}
-        
       </ul>
     </div>
   );

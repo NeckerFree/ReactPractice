@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 
-const Page404 = () => {
+const NotFound = () => {
   return (
     <div>
       <Link to="/">Back</Link>
-      <p>404: API URL not found!</p>
+      <p>General page not found!</p>
     </div>
   )
 }
 
-export default Page404;
+export default NotFound;
