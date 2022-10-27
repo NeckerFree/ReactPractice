@@ -12,6 +12,7 @@ const IndexPage = () => {
         <li><Link to="/toggebuton" >ToggleButton</Link></li>
         <li><Link to="/pagination" >Pagination</Link></li>
         <li><Link to="/exercise4" >Exercise4</Link></li>
+        <li><Link to="/windowsize" >WindowSize</Link></li>
         {breeds.map(breed => (
           <li key={breed}>
             <Link to={`/dogs/${breed}/`}>{breed}</Link>

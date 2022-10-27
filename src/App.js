@@ -1,5 +1,5 @@
 import './App.css';
-import { BrowserRouter, Route, Routes, Switch } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CallApi from './components/CallApi';
 import Exercise4 from './components/Exercise4';
 import Pagination from './components/Pagination';
@@ -9,6 +9,8 @@ import DogPage from './components/DogPage';
 import Page404 from './components/Page404';
 import ErrorHandler from './components/ErrorHandler';
 import NotFound from './components/NotFound';
+import WindowSize from './components/WindowSize';
+
 
 const App = () => {
   return (
@@ -22,6 +24,7 @@ const App = () => {
             <Route exact path="/pagination" element={<Pagination />} />
             <Route exact path="/exercise4" element={<Exercise4 />} />
             <Route exact path="/dogs/:breed/" element={<DogPage />} />
+            <Route exact path='/windowsize' element={<WindowSize />} />
             <Route element={Page404} />
             <Route path="*" element={<NotFound />} />
             {/* <Route component={Page404} /> */}
