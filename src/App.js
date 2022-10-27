@@ -10,6 +10,7 @@ import Page404 from './components/Page404';
 import ErrorHandler from './components/ErrorHandler';
 import NotFound from './components/NotFound';
 import WindowSize from './components/WindowSize';
+import UsingReducer from './components/UsingReducer';
 
 
 const App = () => {
@@ -25,6 +26,7 @@ const App = () => {
             <Route exact path="/exercise4" element={<Exercise4 />} />
             <Route exact path="/dogs/:breed/" element={<DogPage />} />
             <Route exact path='/windowsize' element={<WindowSize />} />
+            <Route exact path='/usingreducer' element={<UsingReducer />} />
             <Route element={Page404} />
             <Route path="*" element={<NotFound />} />
             {/* <Route component={Page404} /> */}

@@ -33,3 +33,13 @@ text-align: left;
 .cell-text{
   text-align: left;
 }
+
+.board{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  justify-content: space-between;
+}
