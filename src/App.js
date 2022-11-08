@@ -12,6 +12,8 @@ import NotFound from './components/NotFound';
 import WindowSize from './components/WindowSize';
 import UsingReducer from './components/UsingReducer';
 import ErrorCounter from './components/ErrorCounter';
+import UseEffectTest from './components/UseEffectTest';
+import GetData from './components/GetData';
 
 const App = () => {
   return (
@@ -28,6 +30,8 @@ const App = () => {
               <Route exact path='/windowsize' element={<WindowSize />} />
               <Route exact path='/usingreducer' element={<UsingReducer />} />
               <Route exact path='/counter' element={<ErrorCounter />} />
+              <Route exact path='/useeffect' element={<UseEffectTest />} />
+              <Route exact path='/getdata' element={<GetData />} />
               <Route element={Page404} />
               <Route path="*" element={<NotFound />} />
               {/* <Route component={Page404} /> */}
