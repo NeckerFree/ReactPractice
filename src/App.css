@@ -43,3 +43,6 @@ text-align: left;
   display: flex;
   justify-content: space-between;
 }
+.change-font{
+  font-size: clamp(30px, 10vw, 250px);
+}
