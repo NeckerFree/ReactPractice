@@ -14,6 +14,9 @@ const IndexPage = () => {
         <li><Link to="/exercise4" >Exercise4</Link></li>
         <li><Link to="/windowsize" >WindowSize</Link></li>
         <li><Link to="/usingreducer" >Using Reducer</Link></li>
+        <li><Link to='/counter'>Error Counter</Link></li>
+        <li><Link to='/useeffect'>Use Effect</Link></li>
+        <li><Link to='/getdata'>Get Data</Link></li>
         {breeds.map(breed => (
           <li key={breed}>
             <Link to={`/dogs/${breed}/`}>{breed}</Link>
