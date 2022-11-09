@@ -14,6 +14,7 @@ import UsingReducer from './components/UsingReducer';
 import ErrorCounter from './components/ErrorCounter';
 import UseEffectTest from './components/UseEffectTest';
 import GetData from './components/GetData';
+import ResizeFont from './components/ResizeFont';
 
 const App = () => {
   return (
@@ -32,6 +33,7 @@ const App = () => {
               <Route exact path='/counter' element={<ErrorCounter />} />
               <Route exact path='/useeffect' element={<UseEffectTest />} />
               <Route exact path='/getdata' element={<GetData />} />
+              <Route exact path='/resizefont' element={<ResizeFont />} />
               <Route element={Page404} />
               <Route path="*" element={<NotFound />} />
               {/* <Route component={Page404} /> */}
