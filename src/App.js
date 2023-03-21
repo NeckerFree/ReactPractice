@@ -15,8 +15,12 @@ import ErrorCounter from './components/ErrorCounter';
 import UseEffectTest from './components/UseEffectTest';
 import GetData from './components/GetData';
 import ResizeFont from './components/ResizeFont';
+import GetObjData from './components/GetObjData';
+import MouseMove from './components/MouseMove';
+import Clock from './components/Clock';
 
 const App = () => {
+  let deadline = "January, 01, 2023";
   return (
     <div className="contenedor">
       <BrowserRouter>
@@ -34,6 +38,9 @@ const App = () => {
               <Route exact path='/useeffect' element={<UseEffectTest />} />
               <Route exact path='/getdata' element={<GetData />} />
               <Route exact path='/resizefont' element={<ResizeFont />} />
+              <Route exact path='/getobjdata' element={<GetObjData />} />
+              <Route exact path='/mousemove' element={<MouseMove />} />
+              <Route exact path='/clock' element={<Clock deadline={deadline}/>} />
               <Route element={Page404} />
               <Route path="*" element={<NotFound />} />
               {/* <Route component={Page404} /> */}
