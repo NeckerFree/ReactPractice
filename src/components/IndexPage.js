@@ -21,6 +21,7 @@ const IndexPage = () => {
         <li><Link to='/getobjdata'>Get Obj Data</Link></li>
         <li><Link to='/mousemove'>Mouse Move</Link></li>
         <li><Link to='/clock'>Clock</Link></li>
+        <li><Link to={'/countdown'}>CountDown</Link></li>
         {breeds.map(breed => (
           <li key={breed}>
             <Link to={`/dogs/${breed}/`}>{breed}</Link>
