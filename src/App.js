@@ -19,6 +19,8 @@ import GetObjData from './components/GetObjData';
 import MouseMove from './components/MouseMove';
 import Clock from './components/Clock';
 import CountDownContainer from './components/CountDownContainer';
+import HooksComponent from './components/HooksComponent';
+import Bank from './components/bank';
 
 const App = () => {
   let deadline = "January, 01, 2023";
@@ -43,6 +45,8 @@ const App = () => {
             <Route exact path='/mousemove' element={<MouseMove />} />
             <Route exact path='/clock' element={<Clock deadline={deadline} />} />
             <Route exact path='/countdown' element={<CountDownContainer />} />
+            <Route exact path='/hookscomp' element ={<HooksComponent />} />
+            <Route exact path='/bank' element ={<Bank />} />
             <Route element={Page404} />
             <Route path="*" element={<NotFound />} />
             {/* <Route component={Page404} /> */}

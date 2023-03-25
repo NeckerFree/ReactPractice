@@ -29,4 +29,4 @@ ShowCounter.propTypes = {
     seconds:PropTypes.number.isRequired,
 }
 
-export default ShowCounter
+export default ShowCounter;
