@@ -21,6 +21,7 @@ import Clock from './components/Clock';
 import CountDownContainer from './components/CountDownContainer';
 import HooksComponent from './components/HooksComponent';
 import Bank from './components/bank';
+import Board from './components/Board';
 
 const App = () => {
   let deadline = "January, 01, 2023";
@@ -47,6 +48,7 @@ const App = () => {
             <Route exact path='/countdown' element={<CountDownContainer />} />
             <Route exact path='/hookscomp' element ={<HooksComponent />} />
             <Route exact path='/bank' element ={<Bank />} />
+            <Route exact path='/game' element ={<Board />} />
             <Route element={Page404} />
             <Route path="*" element={<NotFound />} />
             {/* <Route component={Page404} /> */}
